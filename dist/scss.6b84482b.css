@@ -1,0 +1,319 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-size: 16px;
+}
+
+ul {
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #f25f3a;
+  outline: none;
+  border: none;
+  border-radius: 60px;
+}
+
+.navigation {
+  transform: translateX(-180px);
+  position: absolute;
+}
+.navigation ul {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+}
+.navigation ul li {
+  background-repeat: no-repeat;
+  background-position: 10px 15px;
+  transform: translate(29px, 80px);
+}
+.navigation ul li a {
+  list-style: none;
+  text-decoration: none;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-inline-start: 20px;
+  padding-inline-start: 25px;
+  color: #a6adb4;
+}
+
+.illustrate {
+  display: flex;
+}
+.illustrate .big + div {
+  position: absolute;
+}
+.illustrate .big {
+  margin-top: -117px;
+}
+.illustrate .big img {
+  width: 122%;
+}
+.illustrate img {
+  width: 100%;
+}
+
+.menu-header {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.menu-header label {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  list-style: none;
+  text-decoration: none;
+  background-image: url(/icon-hamburger.cb455b0f.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 1rem;
+}
+.menu-header button {
+  display: none;
+}
+
+body > [type=checkbox] {
+  display: none;
+}
+
+.checkbox_input[type=checkbox]:checked ~ header label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+
+.checkbox_input:checked ~ nav {
+  transform: translateX(0);
+  position: absolute;
+  top: 5rem;
+  bottom: 4rem;
+  right: 1rem;
+  left: 1rem;
+  z-index: 1;
+  width: 250px;
+  background-color: white;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+}
+
+span {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    padding: 0;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+  .navigation ul {
+    flex-direction: row;
+    display: flex;
+    position: absolute;
+    right: 34%;
+    position: absolute;
+  }
+  .navigation ul li {
+    background-repeat: no-repeat;
+    background-position: 10px 15px;
+    transform: none;
+  }
+  .navigation ul li a {
+    font-size: 12px;
+  }
+
+  body > header > .incon-menu {
+    background-image: none;
+  }
+
+  .header_logo {
+    padding-left: 4rem;
+  }
+
+  .profile {
+    display: none;
+  }
+
+  .menu-header button {
+    display: block;
+    position: absolute;
+    right: 4rem;
+  }
+}
+.build_statedy {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.build_statedy button {
+  width: 140px;
+  height: 45px;
+}
+
+.content_detail .detail {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.content_detail section article div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffefeb;
+  position: relative;
+}
+.content_detail section article button {
+  height: 40px;
+  width: 65px;
+  color: white;
+  font-size: 1rem;
+}
+.content_detail section article h4 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 6rem;
+  font-size: 18px;
+}
+
+.team_work {
+  background-color: #f25f3a;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+.team_work h1 {
+  color: white;
+  text-align: center;
+  width: 82%;
+}
+.team_work button {
+  width: 145px;
+  height: 45px;
+  background-color: white;
+}
+
+.view {
+  padding-bottom: 2rem;
+}
+.view h1, .view button {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.view button {
+  width: 145px;
+  height: 45px;
+  display: block;
+}
+
+footer {
+  background-color: black;
+  padding-top: 2rem;
+  text-align: center;
+}
+footer .copyright {
+  color: white;
+  padding-bottom: 2rem;
+}
+footer nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer nav .icon {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+footer nav ul .update {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer nav ul .update input {
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  outline: none;
+  background-color: white;
+  border: none;
+}
+footer nav ul .update button {
+  border-radius: 40px;
+  height: 40px;
+  width: 90px;
+}
+footer nav ul .update li p > a {
+  color: white;
+}
+footer .icon_link {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+footer .list_link {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .list_link p {
+  text-align: start;
+}
+footer .list_link li {
+  line-height: 1rem;
+}
+footer .list_link li + li {
+  margin-top: -2rem;
+}
+footer .list_link li p a {
+  color: white;
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */
