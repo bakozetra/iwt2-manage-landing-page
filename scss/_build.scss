@@ -15,9 +15,9 @@
 }
 @media (min-width : 375px) {
   body {
-    background-position:109% -4%;
+    background-position:right -5rem top -9rem;;
     top: 3rem;
-    background-size:50%;
+    background-size: 600px;
   }
   .build_statedy {
     display: flex;
@@ -43,6 +43,5 @@
   .image img {
     width: 100%;
     margin-top: -4rem;
-    margin-inline-end: 30rem;
   }
 }

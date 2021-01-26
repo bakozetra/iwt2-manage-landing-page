@@ -219,9 +219,9 @@ span {
 
 @media (min-width: 375px) {
   body {
-    background-position: 109% -4%;
+    background-position: right -5rem top -9rem;
     top: 3rem;
-    background-size: 50%;
+    background-size: 600px;
   }
 
   .build_statedy {
@@ -250,7 +250,6 @@ span {
   .image img {
     width: 100%;
     margin-top: -4rem;
-    margin-inline-end: 30rem;
   }
 }
 .content_detail .detail {
@@ -311,6 +310,8 @@ span {
 }
 .team_work {
   background-color: #f25f3a;
+}
+.team_work div {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -318,17 +319,34 @@ span {
   justify-content: space-between;
   padding-bottom: 4rem;
 }
-.team_work h1 {
+.team_work div h1 {
   color: white;
   text-align: center;
   width: 82%;
 }
-.team_work button {
+.team_work div button {
   width: 145px;
   height: 45px;
   background-color: white;
 }
 
+@media (min-width: 375px) {
+  .team_work {
+    padding-top: 4rem;
+  }
+  .team_work div {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    text-align: start;
+  }
+  .team_work div h1 {
+    text-align: start;
+    width: 47%;
+    margin: 0;
+  }
+}
 .view {
   padding-bottom: 2rem;
 }
@@ -410,6 +428,37 @@ footer .list_link li + li {
 }
 footer .list_link li p a {
   color: white;
+}
+
+@media (min-width: 375px) {
+  footer {
+    position: relative;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+  footer nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer nav .icon {
+    display: flex;
+    flex-direction: column;
+  }
+  footer nav .list_link {
+    width: 40%;
+    margin: 0;
+  }
+  footer nav ul .update input {
+    margin-right: 1rem;
+  }
+  footer .copyright {
+    position: absolute;
+    right: 10rem;
+    top: 8rem;
+  }
 }
 
 /*# sourceMappingURL=/scss.6b84482b.css.map */

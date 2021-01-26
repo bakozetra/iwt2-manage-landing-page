@@ -33,7 +33,6 @@ footer {
         button {
          border-radius: 40px;
          height: 40px;
-        
          width: 90px;
        }
        li {
@@ -69,6 +68,44 @@ footer {
     li  p a {
       color: white;
     }
+  }
+  
+}
+@media(min-width: 375px) {
+  footer {
+    position: relative;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+   .icon {
+     display: flex;
+     flex-direction: column;
+   }  
+   .list_link {
+    width: 40%;
+    margin: 0;
+   }
+   
+   ul {
+    .update {
+     input {
+       margin-right: 1rem;
+     }
+     
+    }
+  }
+  }
+  .copyright{
+    position: absolute;
+    right: 10rem;
+    top: 8rem;
+    
+  }
   }
   
 }

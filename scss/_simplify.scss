@@ -1,12 +1,13 @@
 .team_work {
   background-color: hsl(12, 88%, 59%);
-  text-align: center;
+  div {
+    text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 4rem;
-  h1 {
+  h1{
     color: white;
     text-align: center;
     width: 82%;
@@ -17,4 +18,25 @@
     height: 45px;
     background-color: white;
   }
+  }
+  
 }
+ @media(min-width : 375px) {
+   .team_work {
+     padding-top: 4rem;
+     div {
+       width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+      flex-direction: row; 
+      text-align: start;
+      
+      h1 {
+        text-align: start;
+        width: 47%;
+        margin: 0;
+      }
+     }
+    
+   }
+ }
