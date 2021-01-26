@@ -1,9 +1,48 @@
 .build_statedy {
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  // padding-top: 12rem;
   button {
     width: 140px;
     height: 45px;
+  }
+}
+.image img {
+  width: 100%;
+  margin-top: -6rem;
+}
+@media (min-width : 375px) {
+  body {
+    background-position:109% -4%;
+    top: 3rem;
+    background-size:50%;
+  }
+  .build_statedy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    margin: 0;
+    h1 {
+      width: 55%;
+      margin: 0;
+    }
+    p {
+      width: 55%;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image img {
+    width: 100%;
+    margin-top: -4rem;
+    margin-inline-end: 30rem;
   }
 }

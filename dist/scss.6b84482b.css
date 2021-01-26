@@ -2,6 +2,10 @@ body {
   width: 100%;
   margin: 0;
   font-size: 16px;
+  background-image: url(/bg-tablet-pattern.7e77589d.svg);
+  background-repeat: no-repeat;
+  background-position: 56px -31px;
+  background-size: contain;
 }
 
 ul {
@@ -81,6 +85,7 @@ button {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 6rem;
 }
 .menu-header label {
   display: block;
@@ -131,6 +136,20 @@ span {
   display: none;
 }
 
+@media (min-width) {
+  .illustrate {
+    display: flex;
+  }
+  .illustrate .big + div {
+    position: absolute;
+  }
+  .illustrate .big {
+    margin-top: -117px;
+  }
+  .illustrate .big img {
+    width: 122%;
+  }
+}
 @media (min-width: 768px) {
   .navigation {
     padding: 0;
@@ -170,13 +189,20 @@ span {
     display: none;
   }
 
+  .menu-header {
+    width: 80%;
+  }
   .menu-header button {
     display: block;
     position: absolute;
     right: 4rem;
   }
+  .menu-header .header_logo {
+    padding: 0;
+  }
 }
 .build_statedy {
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -186,6 +212,47 @@ span {
   height: 45px;
 }
 
+.image img {
+  width: 100%;
+  margin-top: -6rem;
+}
+
+@media (min-width: 375px) {
+  body {
+    background-position: 109% -4%;
+    top: 3rem;
+    background-size: 50%;
+  }
+
+  .build_statedy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    margin: 0;
+  }
+  .build_statedy h1 {
+    width: 55%;
+    margin: 0;
+  }
+  .build_statedy p {
+    width: 55%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image img {
+    width: 100%;
+    margin-top: -4rem;
+    margin-inline-end: 30rem;
+  }
+}
 .content_detail .detail {
   width: 90%;
   margin-right: auto;
@@ -213,6 +280,35 @@ span {
   font-size: 18px;
 }
 
+@media (min-width: 375px) {
+  .content_detail {
+    width: 80%;
+    margin-left: auto;
+    display: flex;
+    margin-right: auto;
+  }
+  .content_detail .detail {
+    text-align: start;
+  }
+  .content_detail .detail h1 {
+    margin: 0;
+  }
+  .content_detail .detail p {
+    width: 59%;
+  }
+  .content_detail section {
+    width: 85%;
+  }
+  .content_detail section article div {
+    background-color: transparent;
+  }
+  .content_detail section p {
+    width: 84%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-left: auto;
+  }
+}
 .team_work {
   background-color: #f25f3a;
   text-align: center;
