@@ -355,6 +355,11 @@ span {
 .view {
   padding-bottom: 2rem;
 }
+.view input {
+  position: absolute;
+  position: absolute;
+  top: 10rem;
+}
 .view h1, .view button {
   width: 90%;
   margin-left: auto;
@@ -364,11 +369,19 @@ span {
 .view button {
   margin-top: 2rem;
 }
-.view article {
-  background-color: #fafafa;
+.view .slide img {
+  margin-top: 0rem;
+  width: 100px;
 }
-.view article img {
+.view .slide div {
+  background-color: #fafafa;
   margin-top: -5rem;
+}
+.view .slide div h3 {
+  padding-top: 5rem;
+}
+.view .slide div p {
+  padding-bottom: 2rem;
 }
 .view button {
   width: 145px;
@@ -398,7 +411,7 @@ span {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background: #fff;
+  background: orange;
   border-radius: 50px;
   margin: 0 0.2em 1em;
 }
@@ -413,7 +426,6 @@ span {
   top: 0;
   left: 100%;
   z-index: 10;
-  padding: 8rem 1em 0;
   background-size: cover;
   background-position: 50% 50%;
   transition: left 0s 0.75s;
@@ -423,28 +435,6 @@ span {
   left: 0;
   z-index: 100;
   transition: left 0.65s ease-out;
-}
-
-.slide-1 {
-  background-image: url("/avatar-ali.61420d53.png");
-}
-
-.slide-2 {
-  background-image: url("/avatar-anisha.0b880032.png");
-}
-
-.slide-3 {
-  background-image: url("/avatar-richard.e86f8008.png");
-}
-
-.slide-4 {
-  background-image: url("/avatar-shanai.eaf7bd35.png");
-}
-
-.slide-1, .slide-2, .slide-4, .slide-3 {
-  background-position: -5rem;
-  background-repeat: no-repeat;
-  background-size: 50px;
 }
 
 footer {
