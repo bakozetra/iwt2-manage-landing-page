@@ -6,6 +6,11 @@ body {
   background-repeat: no-repeat;
   background-position: 56px -31px;
   background-size: contain;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
 }
 
 ul {
@@ -357,9 +362,89 @@ span {
   text-align: center;
 }
 .view button {
+  margin-top: 2rem;
+}
+.view article {
+  background-color: #fafafa;
+}
+.view article img {
+  margin-top: -5rem;
+}
+.view button {
   width: 145px;
   height: 45px;
   display: block;
+}
+
+.slider-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 22rem;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  bottom: 0;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+.menu label:hover {
+  background: red;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8rem 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s 0.75s;
+}
+
+[id^=slide]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+.slide-1 {
+  background-image: url("/avatar-ali.61420d53.png");
+}
+
+.slide-2 {
+  background-image: url("/avatar-anisha.0b880032.png");
+}
+
+.slide-3 {
+  background-image: url("/avatar-richard.e86f8008.png");
+}
+
+.slide-4 {
+  background-image: url("/avatar-shanai.eaf7bd35.png");
+}
+
+.slide-1, .slide-2, .slide-4, .slide-3 {
+  background-position: -5rem;
+  background-repeat: no-repeat;
+  background-size: 50px;
 }
 
 footer {
