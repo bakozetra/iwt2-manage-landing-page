@@ -18,7 +18,7 @@ ul {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 li {
@@ -34,6 +34,7 @@ button {
   outline: none;
   border: none;
   border-radius: 60px;
+  color: white;
 }
 
 .navigation {
@@ -224,9 +225,9 @@ span {
 
 @media (min-width: 375px) {
   body {
-    background-position: right -5rem top -9rem;
+    background-position: right -3rem top -7rem;
     top: 3rem;
-    background-size: 600px;
+    background-size: 560px;
   }
 
   .build_statedy {
@@ -235,9 +236,10 @@ span {
     align-items: flex-start;
     text-align: start;
     margin: 0;
+    padding-bottom: 6rem;
   }
   .build_statedy h1 {
-    width: 55%;
+    width: 64%;
     margin: 0;
   }
   .build_statedy p {
@@ -253,8 +255,9 @@ span {
   }
 
   .image img {
-    width: 100%;
+    width: 120%;
     margin-top: -4rem;
+    margin-left: -5rem;
   }
 }
 .content_detail .detail {
@@ -298,7 +301,7 @@ span {
     margin: 0;
   }
   .content_detail .detail p {
-    width: 59%;
+    width: 67%;
   }
   .content_detail section {
     width: 85%;
@@ -307,9 +310,7 @@ span {
     background-color: transparent;
   }
   .content_detail section p {
-    width: 84%;
-    font-size: 1.2rem;
-    line-height: 1.5;
+    width: 76%;
     margin-left: auto;
   }
 }
@@ -333,6 +334,7 @@ span {
   width: 145px;
   height: 45px;
   background-color: white;
+  color: #f25f3a;
 }
 
 @media (min-width: 375px) {
@@ -437,6 +439,16 @@ span {
   transition: left 0.65s ease-out;
 }
 
+@media (min-width: 375px) {
+  .slider-container {
+    display: flex;
+    position: relative;
+  }
+
+  .slide {
+    position: relative;
+  }
+}
 footer {
   background-color: black;
   padding-top: 2rem;
