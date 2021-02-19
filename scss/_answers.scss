@@ -1,7 +1,6 @@
 .view {
   input {
     position: absolute;
-    position: absolute;
     top: 10rem;
   }
   h1 , button {
@@ -84,12 +83,28 @@
   transition: left .65s ease-out;
 }
 @media(min-width:375px) {
+  .view {
+     position :inherit;
+  }
   .slider-container {
     display: flex;
-    position: relative;
+    position:inherit;
+    padding-bottom: 2rem;
   }
-  .slide {
-    position: relative;
-  }
+   
+  
+   .menu{
+     display: none;
+   }
+   .slide {
+     position: inherit;
+     margin-right: 2rem;
+     
+     div {
+      width: 500px;
+      border-radius: 40px;
+     }
+   }
 }
+
 
